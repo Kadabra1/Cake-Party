@@ -1,0 +1,83 @@
+/* Estilos específicos para el formulario de login */
+.login-container {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(255, 105, 180, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.login-form .form-label {
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.login-form .form-control {
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #dee2e6;
+}
+
+.login-form .btn {
+    padding: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.login-form .btn-primary {
+    background: linear-gradient(45deg, var(--primary-color), #ff4da6);
+    border: none;
+}
+
+.login-form .btn-primary:hover {
+    background: linear-gradient(45deg, #ff4da6, var(--primary-color));
+    transform: translateY(-2px);
+}
+
+.login-footer {
+    margin-top: 1.5rem;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.login-footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-card {
+    animation: fadeIn 0.5s ease-out;
+} 
